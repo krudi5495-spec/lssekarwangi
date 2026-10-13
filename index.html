@@ -81,7 +81,6 @@
                 <img src="https://i.ibb.co.com/XkVSq72n/ls-logo.png" alt="LS Sekar Wangi Logo" class="w-10 h-10 object-contain transition-transform group-hover:scale-105">
                 <div>
                     <span class="block font-serif font-bold text-xs sm:text-sm tracking-widest text-white">LS SEKAR WANGI</span>
-                    <span class="block text-[10px] text-stone-400 tracking-wider uppercase font-medium">Singa Depok Bandung</span>
                 </div>
             </a>
             
@@ -114,7 +113,7 @@
         </div>
     </header>
 
-    <!-- Hero Section / Banner Sampul Atas (Dioptimalkan untuk HP & Komputer) -->
+    <!-- Hero Section / Banner Sampul Atas -->
     <section class="relative min-h-[85vh] sm:min-h-[90vh] flex items-center justify-center text-center px-6 py-28 overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center md:bg-fixed filter brightness-[0.4] contrast-115 scale-105" style="background-image: url('https://i.ibb.co.com/ksYjbBv4/845457762-1632789111818276-8285239934638899814-n.jpg');"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-[#070707]/60 via-[#070707]/75 to-[#070707]"></div>
@@ -511,7 +510,7 @@
             const catatan = document.getElementById('catatan').value;
 
             const phone = "6283116743088";
-            const text = `Halo Admin LS Sekar Wangi,\n\nIbu/Bapak ingin memesan pertunjukan dengan detail berikut:\n\n*Nama Pemesan:* ${nama}\n*Jenis Acara:* ${jenis}\n*Tanggal Acara:* ${tanggal}\n*Lokasi Acara:* ${lokasi}\n*Catatan:* ${catatan || '-'}\n\nMohon konfirmasi ketersediaan jadwal. Terima kasih.`;
+            const text = `Halo Admin LS Sekar Wangi,\n\nSaya ingin memesan pertunjukan dengan detail berikut:\n\n*Nama Pemesan:* ${nama}\n*Jenis Acara:* ${jenis}\n*Tanggal Acara:* ${tanggal}\n*Lokasi Acara:* ${lokasi}\n*Catatan:* ${catatan || '-'}\n\nMohon konfirmasi ketersediaan jadwal. Terima kasih.`;
 
             const encoded = encodeURIComponent(text);
             window.open(`https://wa.me/${phone}?text=${encoded}`, '_blank');
