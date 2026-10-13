@@ -35,6 +35,7 @@
         .font-serif {
             font-family: 'Cinzel', serif;
         }
+        /* Style khusus untuk judul gaya modern tebal */
         .modern-heading {
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-weight: 800;
@@ -188,16 +189,17 @@
         </div>
     </section>
 
-    <!-- Galeri Foto Pentas & Katalog Video Interaktif di Sampingnya -->
+    <!-- Galeri Foto Tumpang Tindih & Video YouTube (Gaya Font Diperbarui) -->
     <section id="galeri" class="py-24 bg-[#0F0F0F] border-y border-[#262626]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-3xl mx-auto text-center space-y-3 mb-16">
+                <!-- Font Diubah Menjadi Gaya Modern Tebal (Mengikuti Contoh) -->
                 <span class="text-xs uppercase tracking-[0.2em] text-gold font-extrabold inline-block">Dokumentasi Resmi</span>
                 <h2 class="modern-heading text-3xl sm:text-4xl text-white tracking-tight">Galeri Foto & Video Pertunjukan</h2>
                 <p class="text-stone-400 text-xs sm:text-sm font-medium">Saksikan momen terbaik dan tonton video penampilan Lingkung Seni Sekar Wangi langsung di website</p>
             </div>
 
-            <!-- Grid 2 Kolom Sejajar: Kiri Galeri Foto, Kanan Katalog Video Interaktif -->
+            <!-- Grid 2 Kolom: Kiri Galeri Foto Tumpang Tindih, Kanan Video YouTube -->
             <div class="grid lg:grid-cols-12 gap-8 items-center">
                 
                 <!-- Kolom Kiri: Galeri Foto Tumpang Tindih (Gaya gendesignid) -->
@@ -243,43 +245,34 @@
                     </div>
                 </div>
 
-                <!-- Kolom Kanan: Katalog Video Interaktif (Gaya Tampilan Serupa & Pengganti Video Sebelumnya) -->
+                <!-- Kolom Kanan: Video Pertunjukan YouTube Terintegrasi -->
                 <div class="lg:col-span-5 bg-[#141414] p-6 sm:p-8 rounded-3xl border border-[#262626] space-y-4">
                     <div class="flex items-center justify-between">
                         <h3 class="font-serif text-lg font-bold text-white flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-gold"></span> Katalog Video Pentas
+                            <span class="w-2 h-2 rounded-full bg-red-600"></span> Video Pertunjukan
                         </h3>
-                        <span id="video-indicator" class="text-xs font-semibold text-stone-400 uppercase tracking-widest">1 / 5</span>
+                        <span class="text-[10px] bg-red-600/20 text-red-400 px-2.5 py-1 rounded-full font-semibold">Tonton Langsung</span>
                     </div>
 
-                    <!-- Area Pemutar Video Utama Katalog -->
-                    <div class="relative aspect-[9/16] sm:aspect-video w-full rounded-2xl overflow-hidden bg-[#0A0A0A] border border-gold/40 shadow-2xl flex items-center justify-center">
-                        <video id="active-video-player" src="video_1.mov" controls class="w-full h-full object-cover" preload="metadata"></video>
+                    <p class="text-stone-400 text-xs leading-relaxed">
+                        Saksikan penampilan eksklusif Lingkung Seni Singa Depok Sekar Wangi langsung di sini tanpa perlu membuka YouTube.
+                    </p>
+
+                    <!-- Embed Video Player dengan atribut referrerpolicy untuk mencegah Error 153 -->
+                    <div class="aspect-video w-full rounded-2xl overflow-hidden bg-[#0A0A0A] border border-[#262626] shadow-lg">
+                        <iframe 
+                            class="w-full h-full" 
+                            src="https://www.youtube.com/embed/n6OxDAyi4_Y" 
+                            title="Video Pertunjukan LS Sekar Wangi" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
 
-                    <!-- Informasi Judul Video Aktif -->
-                    <div class="text-center">
-                        <h4 id="active-video-title" class="font-serif font-bold text-xs sm:text-sm text-white">Klip Pertunjukan Singa Depok 1</h4>
-                        <span class="text-[10px] text-gold uppercase tracking-wider">Koleksi Video Resmi</span>
-                    </div>
-
-                    <!-- Miniatur Katalog Pilihan / Tombol Geser Video -->
-                    <div class="grid grid-cols-5 gap-2 pt-2">
-                        <button onclick="switchVideo(0, 'video_1.mov', 'Klip Pertunjukan Singa Depok 1')" class="video-thumb rounded-lg overflow-hidden border-2 border-gold aspect-video bg-black focus:outline-none transition">
-                            <video src="video_1.mov" class="w-full h-full object-cover pointer-events-none" muted></video>
-                        </button>
-                        <button onclick="switchVideo(1, 'video_2.mov', 'Klip Pertunjukan Singa Depok 2')" class="video-thumb rounded-lg overflow-hidden border-2 border-transparent hover:border-gold/60 aspect-video bg-black focus:outline-none transition">
-                            <video src="video_2.mov" class="w-full h-full object-cover pointer-events-none" muted></video>
-                        </button>
-                        <button onclick="switchVideo(2, 'video_3.mov', 'Klip Pertunjukan Singa Depok 3')" class="video-thumb rounded-lg overflow-hidden border-2 border-transparent hover:border-gold/60 aspect-video bg-black focus:outline-none transition">
-                            <video src="video_3.mov" class="w-full h-full object-cover pointer-events-none" muted></video>
-                        </button>
-                        <button onclick="switchVideo(3, 'video_4.mov', 'Klip Pertunjukan Singa Depok 4')" class="video-thumb rounded-lg overflow-hidden border-2 border-transparent hover:border-gold/60 aspect-video bg-black focus:outline-none transition">
-                            <video src="video_4.mov" class="w-full h-full object-cover pointer-events-none" muted></video>
-                        </button>
-                        <button onclick="switchVideo(4, 'video_5.mov', 'Klip Pertunjukan Singa Depok 5')" class="video-thumb rounded-lg overflow-hidden border-2 border-transparent hover:border-gold/60 aspect-video bg-black focus:outline-none transition">
-                            <video src="video_5.mov" class="w-full h-full object-cover pointer-events-none" muted></video>
-                        </button>
+                    <div class="pt-2 text-center">
+                        <span class="text-[11px] text-stone-500">Putar video langsung di atas</span>
                     </div>
                 </div>
 
@@ -385,7 +378,7 @@
         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
     </a>
 
-    <!-- Script Interaktif & Slider Galeri Foto & Katalog Video -->
+    <!-- Script Interaktif & Slider Galeri Tumpang Tindih -->
     <script>
         // Mobile Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
@@ -432,27 +425,6 @@
         function prevSlide() {
             currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
             updateGallery();
-        }
-
-        // Fungsi Interaktif Katalog Video
-        function switchVideo(index, filename, title) {
-            const player = document.getElementById('active-video-player');
-            player.src = filename;
-            player.play();
-            document.getElementById('active-video-title').innerText = title;
-            document.getElementById('video-indicator').innerText = `${index + 1} / 5`;
-
-            // Update border aktif pada tombol miniatur
-            const thumbs = document.querySelectorAll('.video-thumb');
-            thumbs.forEach((btn, i) => {
-                if (i === index) {
-                    btn.classList.add('border-gold');
-                    btn.classList.remove('border-transparent');
-                } else {
-                    btn.classList.remove('border-gold');
-                    btn.classList.add('border-transparent');
-                }
-            });
         }
 
         window.onload = updateGallery;
