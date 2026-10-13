@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LS Sekar Wangi Bandung — Lingkung Seni Singa Depok</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkBg: '#0A0A0A',
+                        cardBg: '#141414',
+                        borderDark: '#262626'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Cinzel"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0A0A0A;
+            color: #E5E5E5;
+        }
+        .font-serif {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-[#E5E5E5] antialiased selection:bg-[#D4AF37] selection:text-black">
+
+    <!-- Navbar Minimalis -->
+    <header class="sticky top-0 z-50 bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#262626]">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <img src="https://i.ibb.co.com/XkVSq72n/ls-logo.png" alt="LS Sekar Wangi Logo" class="w-10 h-10 object-contain">
+                <div>
+                    <span class="block font-serif font-bold text-xs sm:text-sm tracking-widest text-white">LS SEKAR WANGI</span>
+                    <span class="block text-[10px] text-stone-400 tracking-wider uppercase">Singa Depok Bandung</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-300">
+                <a href="#tentang" class="hover:text-gold transition">Tentang</a>
+                <a href="#layanan" class="hover:text-gold transition">Layanan</a>
+                <a href="#galeri" class="hover:text-gold transition">Galeri & Video</a>
+                <a href="#kontak" class="hover:text-gold transition">Kontak & Booking</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/6283116743088?text=Halo%20Admin%20LS%20Sekar%20Wangi,%20saya%20ingin%20berkonsultasi%20mengenai%20pemesanan%20pertunjukan." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-gold text-black font-semibold text-xs uppercase tracking-wider hover:bg-[#C29F31] transition">
+                    WhatsApp Booking
+                </a>
+                <button id="menu-btn" class="md:hidden p-2 text-stone-300 focus:outline-none" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-4 pb-6 bg-[#141414] border-b border-[#262626] space-y-3">
+            <a href="#tentang" class="block font-medium text-stone-300 py-1 hover:text-gold">Tentang</a>
+            <a href="#layanan" class="block font-medium text-stone-300 py-1 hover:text-gold">Layanan</a>
+            <a href="#galeri" class="block font-medium text-stone-300 py-1 hover:text-gold">Galeri & Video</a>
+            <a href="#kontak" class="block font-medium text-stone-300 py-1 hover:text-gold">Kontak & Booking</a>
+            <a href="https://wa.me/6283116743088?text=Halo%20Admin%20LS%20Sekar%20Wangi,%20saya%20ingin%20berkonsultasi%20mengenai%20pemesanan%20pertunjukan." target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center mt-2 px-5 py-3 rounded-xl bg-gold text-black font-semibold text-xs uppercase tracking-wider">
+                WhatsApp Booking
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section dengan Foto Banner Asli -->
+    <section class="relative min-h-[85vh] flex items-center justify-center text-center px-6 py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://i.ibb.co.com/ksYjbBv4/845457762-1632789111818276-8285239934638899814-n.jpg');"></div>
+        <div class="absolute inset-0 bg-black/80"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto space-y-6">
+            <div class="flex justify-center mb-2">
+                <img src="https://i.ibb.co.com/XkVSq72n/ls-logo.png" alt="LS Sekar Wangi Logo" class="w-20 h-20 sm:w-24 sm:h-24 object-contain">
+            </div>
+
+            <span class="text-xs font-semibold tracking-[0.25em] uppercase text-gold">
+                Lingkung Seni Singa Depok Sekar Wangi Bandung
+            </span>
+
+            <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-wider text-white leading-tight">
+                NGAGUGAH JATI DIRI
+            </h1>
+
+            <p class="text-stone-400 text-xs sm:text-sm tracking-[0.2em] uppercase">
+                Melestarikan budaya &bull; Mempererat persaudaraan &bull; Menjaga tradisi
+            </p>
+
+            <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed pt-2">
+                Kelompok kesenian tradisional Sunda berbasis di Kota Bandung. Berspesialisasi dalam pertunjukan seni rakyat Singa Depok dan Kuda Lumping untuk memeriahkan berbagai acara masyarakat.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+                <a href="#kontak" class="px-7 py-3.5 rounded-full bg-gold text-black font-semibold text-xs uppercase tracking-wider hover:bg-[#C29F31] transition">
+                    Pesan Pertunjukan
+                </a>
+                <a href="#galeri" class="px-7 py-3.5 rounded-full bg-[#1A1A1A] border border-[#333] text-stone-200 font-semibold text-xs uppercase tracking-wider hover:bg-[#222] transition">
+                    Lihat Galeri & Video
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-20 bg-[#0F0F0F] border-y border-[#262626]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center space-y-3 mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Profil Komunitas</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white tracking-wide">Tentang LS Sekar Wangi</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-[#141414] p-6 rounded-2xl border border-[#262626] space-y-3">
+                    <div class="text-gold text-xl font-bold">📍</div>
+                    <h3 class="font-serif font-bold text-base text-white">Markas & Alamat</h3>
+                    <p class="text-stone-400 text-xs leading-relaxed">
+                        Jl. Derwati RT 02/04, Kel. Derwati, Kec. Rancasari, Kota Bandung, Jawa Barat. Pusat latihan dan koordinasi resmi.
+                    </p>
+                </div>
+
+                <div class="bg-[#141414] p-6 rounded-2xl border border-[#262626] space-y-3">
+                    <div class="text-gold text-xl font-bold">🦁</div>
+                    <h3 class="font-serif font-bold text-base text-white">Kategori Seni</h3>
+                    <p class="text-stone-400 text-xs leading-relaxed">
+                        Lingkung Seni Rakyat Sunda spesialisasi pertunjukan arak-arakan Singa Depok dan Kuda Lumping yang penuh energi dan tradisi.
+                    </p>
+                </div>
+
+                <div class="bg-[#141414] p-6 rounded-2xl border border-[#262626] space-y-3">
+                    <div class="text-gold text-xl font-bold">📱</div>
+                    <h3 class="font-serif font-bold text-base text-white">Media Sosial</h3>
+                    <p class="text-stone-400 text-xs leading-relaxed">
+                        Instagram resmi: <strong>@LSSsekarwangi</strong>. Dokumentasi kegiatan juga dibagikan oleh masyarakat melalui YouTube.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan / Jenis Acara -->
+    <section id="layanan" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-16">
+            <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Layanan Kami</span>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white tracking-wide">Menerima Acara & Pentas</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="p-6 rounded-2xl bg-[#141414] border border-[#262626]">
+                <div class="text-gold font-bold mb-2">✓</div>
+                <h3 class="font-serif font-bold text-base mb-1 text-white">Khitanan</h3>
+                <p class="text-xs text-stone-400 leading-relaxed">Pawai arak-arakan sunatan tradisional khas Sunda.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-[#141414] border border-[#262626]">
+                <div class="text-gold font-bold mb-2">✓</div>
+                <h3 class="font-serif font-bold text-base mb-1 text-white">Pernikahan</h3>
+                <p class="text-xs text-stone-400 leading-relaxed">Penyambutan dan iring-iringan pengantin resepsi.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-[#141414] border border-[#262626]">
+                <div class="text-gold font-bold mb-2">✓</div>
+                <h3 class="font-serif font-bold text-base mb-1 text-white">Ulang Tahun</h3>
+                <p class="text-xs text-stone-400 leading-relaxed">Kemeriahan hiburan rakyat untuk syukuran spesial.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-[#141414] border border-[#262626]">
+                <div class="text-gold font-bold mb-2">✓</div>
+                <h3 class="font-serif font-bold text-base mb-1 text-white">Festival & Lainnya</h3>
+                <p class="text-xs text-stone-400 leading-relaxed">Karnaval budaya, pawai seni, dan acara penyambutan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Foto Tumpang Tindih & Video YouTube (Samping-sampingan di PC) -->
+    <section id="galeri" class="py-24 bg-[#0F0F0F] border-y border-[#262626]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center space-y-3 mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Dokumentasi Resmi</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white tracking-wide">Galeri Foto & Video Pertunjukan</h2>
+                <p class="text-stone-400 text-xs">Saksikan momen terbaik dan tonton video penampilan Lingkung Seni Sekar Wangi langsung di website</p>
+            </div>
+
+            <!-- Grid 2 Kolom: Kiri Galeri Foto Tumpang Tindih, Kanan Video YouTube -->
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Kolom Kiri: Galeri Foto Tumpang Tindih (Gaya gendesignid) -->
+                <div class="lg:col-span-7 bg-[#141414] p-6 sm:p-8 rounded-3xl border border-[#262626]">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="font-serif text-lg font-bold text-white flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-gold"></span> Galeri Foto Pentas
+                        </h3>
+                        <span id="slide-indicator" class="text-xs font-semibold text-stone-400 uppercase tracking-widest">1 / 10</span>
+                    </div>
+
+                    <!-- Area Slider Tumpang Tindih -->
+                    <div class="relative h-[280px] sm:h-[350px] flex items-center justify-center my-4">
+                        <!-- Foto Kiri -->
+                        <div id="left-card" class="absolute left-0 sm:left-4 w-[50%] aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 z-10 opacity-40 scale-90 -rotate-3 blur-[1px] cursor-pointer" onclick="prevSlide()">
+                            <img id="left-img" src="" alt="Previous" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Foto Tengah (Menonjol) -->
+                        <div class="absolute z-30 w-[75%] sm:w-[60%] aspect-[4/3] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-gold/40 transition-all duration-500 scale-100 rotate-0">
+                            <img id="main-img" src="" alt="Main" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
+                                <span id="main-tag" class="text-[9px] uppercase tracking-wider font-semibold text-gold">Dokumentasi</span>
+                                <h4 id="main-title" class="font-serif font-bold text-xs sm:text-sm text-white mt-0.5"></h4>
+                            </div>
+                        </div>
+
+                        <!-- Foto Kanan -->
+                        <div id="right-card" class="absolute right-0 sm:right-4 w-[50%] aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 z-10 opacity-40 scale-90 rotate-3 blur-[1px] cursor-pointer" onclick="nextSlide()">
+                            <img id="right-img" src="" alt="Next" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Tombol Navigasi Foto -->
+                    <div class="flex items-center justify-center gap-4 mt-6">
+                        <button onclick="prevSlide()" class="w-10 h-10 rounded-full bg-[#0A0A0A] border border-[#333] text-white flex items-center justify-center hover:border-gold transition" aria-label="Sebelumnya">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <span class="text-xs text-stone-400">Geser Foto</span>
+                        <button onclick="nextSlide()" class="w-10 h-10 rounded-full bg-[#0A0A0A] border border-[#333] text-white flex items-center justify-center hover:border-gold transition" aria-label="Berikutnya">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Pemutar Video YouTube (https://www.youtube.com/watch?v=n6OxDAyi4_Y) -->
+                <div class="lg:col-span-5 bg-[#141414] p-6 sm:p-8 rounded-3xl border border-[#262626] space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-serif text-lg font-bold text-white flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-red-600"></span> Video Pertunjukan
+                        </h3>
+                        <span class="text-[10px] bg-red-600/20 text-red-400 px-2.5 py-1 rounded-full font-semibold">Tonton Langsung</span>
+                    </div>
+
+                    <p class="text-stone-400 text-xs leading-relaxed">
+                        Saksikan penampilan eksklusif Lingkung Seni Singa Depok Sekar Wangi langsung di sini tanpa perlu membuka YouTube.
+                    </p>
+
+                    <!-- Embed Video Player (n6OxDAyi4_Y) -->
+                    <div class="aspect-video w-full rounded-2xl overflow-hidden bg-[#0A0A0A] border border-[#262626] shadow-lg">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/n6OxDAyi4_Y" title="Video Pertunjukan LS Sekar Wangi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="pt-2 text-center">
+                        <span class="text-[11px] text-stone-500">Putar video langsung di atas</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Pemesanan & Kontak -->
+    <section id="kontak" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-12 gap-12 items-start">
+            <div class="md:col-span-5 space-y-6">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Kontak Resmi</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold tracking-wide text-white">Hubungi Kami & Pemesanan</h2>
+                <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
+                    Undang Lingkung Seni Singa Depok Sekar Wangi untuk memeriahkan acara Anda. Silakan isi formulir atau hubungi nomor WhatsApp resmi kami di bawah ini.
+                </p>
+
+                <div class="space-y-4 pt-4 border-t border-[#262626]">
+                    <div class="flex items-start gap-3">
+                        <div class="text-gold font-bold">📍</div>
+                        <div>
+                            <h3 class="font-semibold text-xs text-white">Alamat Markas</h3>
+                            <p class="text-xs text-stone-400 mt-0.5">Jl. Derwati RT 02/04, Kel. Derwati, Kec. Rancasari, Kota Bandung</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="text-gold font-bold">💬</div>
+                        <div>
+                            <h3 class="font-semibold text-xs text-white">WhatsApp Resmi</h3>
+                            <p class="text-xs text-gold mt-0.5 font-semibold">083116743088 / 085135177499</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="text-gold font-bold">📸</div>
+                        <div>
+                            <h3 class="font-semibold text-xs text-white">Instagram Resmi</h3>
+                            <p class="text-xs text-stone-400 mt-0.5">@LSSsekarwangi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-7 bg-[#141414] p-6 sm:p-8 rounded-2xl border border-[#262626]">
+                <h3 class="font-serif text-xl font-bold mb-6 text-white">Form Pemesanan WhatsApp</h3>
+                
+                <form id="booking-form" class="space-y-4" onsubmit="sendToWhatsApp(event)">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-1.5">Nama Pemesan *</label>
+                        <input type="text" id="nama" required class="w-full px-4 py-3 rounded-xl bg-[#0A0A0A] border border-[#262626] focus:outline-none focus:border-gold text-xs text-white" placeholder="Masukkan nama lengkap">
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-1.5">Jenis Acara *</label>
+                            <select id="jenis_acara" required class="w-full px-4 py-3 rounded-xl bg-[#0A0A0A] border border-[#262626] focus:outline-none focus:border-gold text-xs text-white">
+                                <option value="" disabled selected>Pilih jenis acara</option>
+                                <option value="Khitanan">Khitanan</option>
+                                <option value="Pernikahan">Pernikahan</option>
+                                <option value="Ulang Tahun">Ulang Tahun</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-1.5">Tanggal Acara *</label>
+                            <input type="date" id="tanggal" required class="w-full px-4 py-3 rounded-xl bg-[#0A0A0A] border border-[#262626] focus:outline-none focus:border-gold text-xs text-white">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-1.5">Lokasi Acara *</label>
+                        <input type="text" id="lokasi" required class="w-full px-4 py-3 rounded-xl bg-[#0A0A0A] border border-[#262626] focus:outline-none focus:border-gold text-xs text-white" placeholder="Contoh: Jl. Derwati No. 12, Rancasari, Bandung">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-1.5">Catatan Tambahan</label>
+                        <textarea id="catatan" rows="3" class="w-full px-4 py-3 rounded-xl bg-[#0A0A0A] border border-[#262626] focus:outline-none focus:border-gold text-xs text-white" placeholder="Tuliskan permintaan khusus jika ada..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-3.5 rounded-xl bg-gold text-black font-semibold uppercase tracking-wider hover:bg-[#C29F31] transition text-xs">
+                        Kirim Pesanan via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#070707] text-stone-500 py-10 border-t border-[#1C1C1C]">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div>
+                <h4 class="font-serif text-white font-bold text-sm tracking-wider">Lingkung Seni Singa Depok Sekar Wangi</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Jl. Derwati RT 02/04, Kel. Derwati, Kec. Rancasari, Kota Bandung</p>
+            </div>
+            <p class="text-xs text-stone-500">
+                &copy; 2026 LS Sekar Wangi Bandung. Ngagugah Jati Diri.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6283116743088?text=Halo%20Admin%20LS%20Sekar%20Wangi,%20saya%20ingin%20berkonsultasi%20mengenai%20pemesanan%20pertunjukan." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3.5 rounded-full shadow-lg hover:scale-105 transition flex items-center justify-center" aria-label="WhatsApp">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+
+    <!-- Script Interaktif & Slider Galeri Tumpang Tindih -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Data Galeri Foto Asli
+        const galleryData = [
+            { img: "https://i.ibb.co.com/4n5BhB88/840051607-1724194648682910-7395825489207716141-n.jpg", title: "Aksi Singa Depok & Musik Tradisional", tag: "Pertunjukan" },
+            { img: "https://i.ibb.co.com/7xBf1s3s/841864621-1078836248356425-1349834455766026457-n.jpg", title: "Kemeriahan Pawai Budaya", tag: "Arak-arakan" },
+            { img: "https://i.ibb.co.com/235HFB1x/841927635-1158799720146023-344809887797110893-n.jpg", title: "Atraksi Kuda Lumping & Singa Depok", tag: "Kesenian Rakyat" },
+            { img: "https://i.ibb.co.com/wFZYKqDY/843433346-2926643887715347-1504015139063038880-n.jpg", title: "Kekompakan Penabuh & Seniman", tag: "Pentas Seni" },
+            { img: "https://i.ibb.co.com/5xs4b3wY/844295637-1859846205002805-1157902841736665827-n.jpg", title: "Dokumentasi Lapangan Pertunjukan", tag: "Tradisi Sunda" },
+            { img: "https://i.ibb.co.com/ksYjbBv4/845457762-1632789111818276-8285239934638899814-n.jpg", title: "Kebersamaan Keluarga Besar Sekar Wangi", tag: "Komunitas" },
+            { img: "https://i.ibb.co.com/CsPH0ZFr/846248954-2189618655315887-7032706592295273701-n.jpg", title: "Atraksi Panggung Meriah", tag: "Pertunjukan" },
+            { img: "https://i.ibb.co.com/PG07WWnb/846319697-1221089923715190-7538450260832159413-n.jpg", title: "Seni Rakyat Singa Depok", tag: "Festival" },
+            { img: "https://i.ibb.co.com/HLfKRHJd/847744591-1643482517512965-4570562384489649862-n.jpg", title: "Pawai Hajatan Masyarakat", tag: "Arak-arakan" },
+            { img: "https://i.ibb.co.com/cRSnywN/848438319-4613975848840259-2582893952900116042-n.jpg", title: "Pelestarian Budaya Sunda", tag: "Tradisi" }
+        ];
+
+        let currentIndex = 0;
+
+        function updateGallery() {
+            const total = galleryData.length;
+            const leftIndex = (currentIndex - 1 + total) % total;
+            const rightIndex = (currentIndex + 1) % total;
+
+            document.getElementById('left-img').src = galleryData[leftIndex].img;
+            document.getElementById('main-img').src = galleryData[currentIndex].img;
+            document.getElementById('right-img').src = galleryData[rightIndex].img;
+
+            document.getElementById('main-title').innerText = galleryData[currentIndex].title;
+            document.getElementById('main-tag').innerText = galleryData[currentIndex].tag;
+            document.getElementById('slide-indicator').innerText = `${currentIndex + 1} / ${total}`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % galleryData.length;
+            updateGallery();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
+            updateGallery();
+        }
+
+        window.onload = updateGallery;
+
+        // WhatsApp Form Handler (Nomor resmi: 083116743088)
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const jenis = document.getElementById('jenis_acara').value;
+            const tanggal = document.getElementById('tanggal').value;
+            const lokasi = document.getElementById('lokasi').value;
+            const catatan = document.getElementById('catatan').value;
+
+            const phone = "6283116743088";
+            const text = `Halo Admin LS Sekar Wangi,\n\nSaya ingin memesan pertunjukan dengan detail berikut:\n\n*Nama Pemesan:* ${nama}\n*Jenis Acara:* ${jenis}\n*Tanggal Acara:* ${tanggal}\n*Lokasi Acara:* ${lokasi}\n*Catatan:* ${catatan || '-'}\n\nMohon konfirmasi ketersediaan jadwal. Terima kasih.`;
+
+            const encoded = encodeURIComponent(text);
+            window.open(`https://wa.me/${phone}?text=${encoded}`, '_blank');
+        }
+    </script>
+</body>
+</html>
