@@ -6,8 +6,8 @@
     <title>LS Sekar Wangi Bandung — Lingkung Seni Singa Depok</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Plus Jakarta Sans (Gaya Modern Tebal) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -34,6 +34,12 @@
         }
         .font-serif {
             font-family: 'Cinzel', serif;
+        }
+        /* Style khusus untuk judul gaya modern tebal */
+        .modern-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.03em;
         }
     </style>
 </head>
@@ -183,13 +189,14 @@
         </div>
     </section>
 
-    <!-- Galeri Foto Tumpang Tindih & Video YouTube (Samping-sampingan di PC) -->
+    <!-- Galeri Foto Tumpang Tindih & Video YouTube (Gaya Font Diperbarui) -->
     <section id="galeri" class="py-24 bg-[#0F0F0F] border-y border-[#262626]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-3xl mx-auto text-center space-y-3 mb-16">
-                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Dokumentasi Resmi</span>
-                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white tracking-wide">Galeri Foto & Video Pertunjukan</h2>
-                <p class="text-stone-400 text-xs">Saksikan momen terbaik dan tonton video penampilan Lingkung Seni Sekar Wangi langsung di website</p>
+                <!-- Font Diubah Menjadi Gaya Modern Tebal (Mengikuti Contoh) -->
+                <span class="text-xs uppercase tracking-[0.2em] text-gold font-extrabold inline-block">Dokumentasi Resmi</span>
+                <h2 class="modern-heading text-3xl sm:text-4xl text-white tracking-tight">Galeri Foto & Video Pertunjukan</h2>
+                <p class="text-stone-400 text-xs sm:text-sm font-medium">Saksikan momen terbaik dan tonton video penampilan Lingkung Seni Sekar Wangi langsung di website</p>
             </div>
 
             <!-- Grid 2 Kolom: Kiri Galeri Foto Tumpang Tindih, Kanan Video YouTube -->
@@ -238,7 +245,7 @@
                     </div>
                 </div>
 
-                <!-- Kolom Kanan: Pemutar Video YouTube (https://www.youtube.com/watch?v=n6OxDAyi4_Y) -->
+                <!-- Kolom Kanan: Video Pertunjukan YouTube Terintegrasi -->
                 <div class="lg:col-span-5 bg-[#141414] p-6 sm:p-8 rounded-3xl border border-[#262626] space-y-4">
                     <div class="flex items-center justify-between">
                         <h3 class="font-serif text-lg font-bold text-white flex items-center gap-2">
@@ -251,9 +258,17 @@
                         Saksikan penampilan eksklusif Lingkung Seni Singa Depok Sekar Wangi langsung di sini tanpa perlu membuka YouTube.
                     </p>
 
-                    <!-- Embed Video Player (n6OxDAyi4_Y) -->
+                    <!-- Embed Video Player dengan atribut referrerpolicy untuk mencegah Error 153 -->
                     <div class="aspect-video w-full rounded-2xl overflow-hidden bg-[#0A0A0A] border border-[#262626] shadow-lg">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/n6OxDAyi4_Y" title="Video Pertunjukan LS Sekar Wangi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe 
+                            class="w-full h-full" 
+                            src="https://www.youtube.com/embed/n6OxDAyi4_Y" 
+                            title="Video Pertunjukan LS Sekar Wangi" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
 
                     <div class="pt-2 text-center">
@@ -351,9 +366,10 @@
                 <h4 class="font-serif text-white font-bold text-sm tracking-wider">Lingkung Seni Singa Depok Sekar Wangi</h4>
                 <p class="text-xs text-stone-500 mt-0.5">Jl. Derwati RT 02/04, Kel. Derwati, Kec. Rancasari, Kota Bandung</p>
             </div>
-            <p class="text-xs text-stone-500">
-                &copy; 2026 LS Sekar Wangi Bandung. Ngagugah Jati Diri.
-            </p>
+            <div class="text-xs text-stone-500 space-y-1">
+                <p>&copy; 2026 LS Sekar Wangi Bandung. Ngagugah Jati Diri.</p>
+                <p>Dibuat oleh <a href="https://www.byrudid.store" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">www.byrudid.store</a></p>
+            </div>
         </div>
     </footer>
 
