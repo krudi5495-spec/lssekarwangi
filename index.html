@@ -40,24 +40,23 @@
             font-weight: 800;
             letter-spacing: -0.03em;
         }
-        /* Kesan kaca telus (Glassmorphism) tanpa garis solid yang kaku */
-        .glass-card {
-            background: rgba(18, 16, 12, 0.70);
+        /* Bingkai Luar Utama (Kombinasi Emas Dominan & Hitam Elegan) */
+        .glass-gold-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.10) 0%, rgba(15, 14, 10, 0.90) 60%, rgba(7, 7, 7, 0.98) 100%);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(212, 175, 55, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), inset 0 1px 2px rgba(212, 175, 55, 0.3);
         }
-        .glass-card-hover:hover {
-            border-color: rgba(212, 175, 55, 0.4);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+        .glass-gold-card:hover {
+            border-color: rgba(212, 175, 55, 0.8);
+            box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
         }
-        /* Latar belakang nuansa emas yang jelas dan responsif di semua perangkat */
         .gold-luxury-bg {
             background-color: #070707;
             background-image: radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.09) 0%, rgba(12, 10, 8, 0.95) 50%, #070707 95%);
             background-attachment: fixed;
         }
-        /* Pola grid latar belakang yang elegan */
         .bg-grid-pattern {
             background-image: linear-gradient(to right, rgba(212, 175, 55, 0.025) 1px, transparent 1px),
                               linear-gradient(to bottom, rgba(212, 175, 55, 0.025) 1px, transparent 1px);
@@ -78,7 +77,7 @@
     <header class="sticky top-0 z-50 bg-[#070707]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <img src="https://i.ibb.co.com/XkVSq72n/ls-logo.png" alt="LS Sekar Wangi Logo" class="w-10 h-10 object-contain transition-transform group-hover:scale-105">
+                <img src="https://i.ibb.co.com/Swp0GFwb/843410137-1463878512357969-2871864964079564229-n.png" alt="LS Sekar Wangi Logo" class="w-10 h-10 object-contain transition-transform group-hover:scale-105">
                 <div>
                     <span class="block font-serif font-bold text-xs sm:text-sm tracking-widest text-white">LS SEKAR WANGI</span>
                 </div>
@@ -95,14 +94,14 @@
                 <a href="https://wa.me/6283116743088?text=Halo%20Admin%20LS%20Sekar%20Wangi,%20saya%20ingin%20berkonsultasi%20mengenai%20pemesanan%20pertunjukan." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-gold text-black font-semibold text-xs uppercase tracking-wider hover:bg-goldHover transition shadow-lg shadow-gold/10">
                     WhatsApp Booking
                 </a>
-                <button id="menu-btn" class="md:hidden p-2.5 rounded-xl glass-card text-stone-300 focus:outline-none" aria-label="Menu">
+                <button id="menu-btn" class="md:hidden p-2.5 rounded-xl glass-gold-card text-stone-300 focus:outline-none" aria-label="Menu">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pt-4 pb-6 glass-card border-b border-white/5 space-y-3">
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-4 pb-6 glass-gold-card border-b border-white/5 space-y-3">
             <a href="#tentang" class="block font-medium text-stone-300 py-2 hover:text-gold border-b border-white/5">Tentang</a>
             <a href="#layanan" class="block font-medium text-stone-300 py-2 hover:text-gold border-b border-white/5">Layanan</a>
             <a href="#galeri" class="block font-medium text-stone-300 py-2 hover:text-gold border-b border-white/5">Galeri & Video</a>
@@ -114,36 +113,36 @@
     </header>
 
     <!-- Hero Section / Banner Sampul Atas -->
-    <section class="relative min-h-[85vh] sm:min-h-[90vh] flex items-center justify-center text-center px-6 py-28 overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center md:bg-fixed filter brightness-[0.4] contrast-115 scale-105" style="background-image: url('https://i.ibb.co.com/ksYjbBv4/845457762-1632789111818276-8285239934638899814-n.jpg');"></div>
-        <div class="absolute inset-0 bg-gradient-to-b from-[#070707]/60 via-[#070707]/75 to-[#070707]"></div>
+    <section class="relative min-h-[85vh] sm:min-h-[90vh] flex items-center justify-center text-center px-4 sm:px-6 py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center md:bg-fixed filter brightness-[0.45] contrast-110 scale-105" style="background-image: url('https://i.ibb.co.com/ksYjbBv4/845457762-1632789111818276-8285239934638899814-n.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#070707]/70 via-[#070707]/60 to-[#070707]"></div>
         
-        <div class="relative z-10 max-w-4xl mx-auto space-y-6">
-            <div class="flex justify-center mb-3">
-                <img src="https://i.ibb.co.com/XkVSq72n/ls-logo.png" alt="LS Sekar Wangi Logo" class="w-20 h-20 sm:w-24 sm:h-24 object-contain drop-shadow-[0_10px_20px_rgba(212,175,55,0.3)]">
+        <div class="relative z-10 max-w-3xl mx-auto space-y-5 sm:space-y-6">
+            <div class="flex justify-center mb-1">
+                <img src="https://i.ibb.co.com/Swp0GFwb/843410137-1463878512357969-2871864964079564229-n.png" alt="LS Sekar Wangi Logo" class="w-16 h-16 sm:w-24 sm:h-24 object-contain drop-shadow-[0_10px_20px_rgba(212,175,55,0.3)]">
             </div>
 
-            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-gold">
+            <span class="inline-block text-[10px] sm:text-xs font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase text-gold px-3.5 py-1.5 rounded-full bg-black/40 border border-gold/20">
                 Lingkung Seni Singa Depok Sekar Wangi Bandung
             </span>
 
-            <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-wider text-white leading-tight drop-shadow-lg">
+            <h1 class="font-serif text-2xl sm:text-4xl md:text-5xl font-bold tracking-wider text-white leading-snug sm:leading-tight drop-shadow-md px-2">
                 NGAGUGAH JATI DIRI
             </h1>
 
-            <p class="text-stone-300 text-xs sm:text-sm tracking-[0.2em] uppercase font-medium">
+            <p class="text-stone-300 text-[11px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] uppercase font-medium max-w-xl mx-auto px-2">
                 Melestarikan budaya &bull; Mempererat persaudaraan &bull; Menjaga tradisi
             </p>
 
-            <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed pt-2">
+            <p class="text-stone-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed px-4">
                 Kelompok kesenian tradisional Sunda berbasis di Kota Bandung. Berspesialisasi dalam pertunjukan seni rakyat Singa Depok dan Kuda Lumping untuk memeriahkan berbagai acara masyarakat.
             </p>
 
-            <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
-                <a href="#kontak" class="px-8 py-3.5 rounded-full bg-gold text-black font-semibold text-xs uppercase tracking-wider hover:bg-goldHover transition shadow-lg shadow-gold/20">
+            <div class="flex flex-wrap items-center justify-center gap-3 pt-3">
+                <a href="#kontak" class="px-7 py-3 rounded-full bg-gold text-black font-semibold text-xs uppercase tracking-wider hover:bg-goldHover transition shadow-lg shadow-gold/20">
                     Pesan Pertunjukan
                 </a>
-                <a href="#galeri" class="px-8 py-3.5 rounded-full glass-card text-stone-200 font-semibold text-xs uppercase tracking-wider hover:bg-white/5 transition">
+                <a href="#galeri" class="px-7 py-3 rounded-full glass-gold-card text-stone-200 font-semibold text-xs uppercase tracking-wider hover:bg-white/5 transition">
                     Lihat Galeri & Video
                 </a>
             </div>
@@ -159,8 +158,7 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Logo Resmi Lokasi (SVG) -->
-                <div class="glass-card glass-card-hover p-8 rounded-3xl space-y-4 transition shadow-xl">
+                <div class="glass-gold-card p-8 rounded-3xl space-y-4 transition shadow-xl">
                     <div class="w-12 h-12 rounded-2xl bg-gold/10 border border-gold/20 flex items-center justify-center text-gold">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                     </div>
@@ -170,10 +168,9 @@
                     </p>
                 </div>
 
-                <!-- Logo Website LS Sekar Wangi -->
-                <div class="glass-card glass-card-hover p-8 rounded-3xl space-y-4 transition shadow-xl">
+                <div class="glass-gold-card p-8 rounded-3xl space-y-4 transition shadow-xl">
                     <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/20 flex items-center justify-center p-1.5 overflow-hidden">
-                        <img src="https://i.ibb.co.com/XkVSq72n/ls-logo.png" alt="LS Logo" class="w-full h-full object-contain scale-110">
+                        <img src="https://i.ibb.co.com/Swp0GFwb/843410137-1463878512357969-2871864964079564229-n.png" alt="LS Logo" class="w-full h-full object-contain scale-110">
                     </div>
                     <h3 class="font-serif font-bold text-base text-white">Kategori Seni</h3>
                     <p class="text-stone-400 text-xs leading-relaxed">
@@ -181,8 +178,7 @@
                     </p>
                 </div>
 
-                <!-- Logo Resmi Instagram (SVG) -->
-                <div class="glass-card glass-card-hover p-8 rounded-3xl space-y-4 transition shadow-xl">
+                <div class="glass-gold-card p-8 rounded-3xl space-y-4 transition shadow-xl">
                     <div class="w-12 h-12 rounded-2xl bg-gold/10 border border-gold/20 flex items-center justify-center text-gold">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                     </div>
@@ -203,22 +199,22 @@
         </div>
 
         <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="p-6 rounded-3xl glass-card glass-card-hover transition group">
+            <div class="p-6 rounded-3xl glass-gold-card transition group">
                 <div class="w-10 h-10 rounded-xl bg-gold/10 flex items-center justify-center text-gold font-bold mb-4 group-hover:scale-110 transition">✓</div>
                 <h3 class="font-serif font-bold text-base mb-1.5 text-white">Khitanan</h3>
                 <p class="text-xs text-stone-400 leading-relaxed">Pawai arak-arakan sunatan tradisional khas Sunda.</p>
             </div>
-            <div class="p-6 rounded-3xl glass-card glass-card-hover transition group">
+            <div class="p-6 rounded-3xl glass-gold-card transition group">
                 <div class="w-10 h-10 rounded-xl bg-gold/10 flex items-center justify-center text-gold font-bold mb-4 group-hover:scale-110 transition">✓</div>
                 <h3 class="font-serif font-bold text-base mb-1.5 text-white">Pernikahan</h3>
                 <p class="text-xs text-stone-400 leading-relaxed">Penyambutan dan iring-iringan pengantin resepsi.</p>
             </div>
-            <div class="p-6 rounded-3xl glass-card glass-card-hover transition group">
+            <div class="p-6 rounded-3xl glass-gold-card transition group">
                 <div class="w-10 h-10 rounded-xl bg-gold/10 flex items-center justify-center text-gold font-bold mb-4 group-hover:scale-110 transition">✓</div>
                 <h3 class="font-serif font-bold text-base mb-1.5 text-white">Ulang Tahun</h3>
                 <p class="text-xs text-stone-400 leading-relaxed">Kemeriahan hiburan rakyat untuk syukuran spesial.</p>
             </div>
-            <div class="p-6 rounded-3xl glass-card glass-card-hover transition group">
+            <div class="p-6 rounded-3xl glass-gold-card transition group">
                 <div class="w-10 h-10 rounded-xl bg-gold/10 flex items-center justify-center text-gold font-bold mb-4 group-hover:scale-110 transition">✓</div>
                 <h3 class="font-serif font-bold text-base mb-1.5 text-white">Festival & Lainnya</h3>
                 <p class="text-xs text-stone-400 leading-relaxed">Karnaval budaya, pawai seni, dan acara penyambutan.</p>
@@ -228,80 +224,75 @@
 
     <!-- GALERI FOTO & VIDEO PERTUNJUKAN -->
     <section id="galeri" class="py-24 relative">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="max-w-3xl mx-auto text-center space-y-3 mb-16">
                 <span class="text-xs uppercase tracking-[0.2em] text-gold font-extrabold inline-block">Dokumentasi Resmi</span>
                 <h2 class="modern-heading text-3xl sm:text-4xl text-white tracking-tight">Galeri Foto & Video Pertunjukan</h2>
-                <p class="text-stone-400 text-xs sm:text-sm font-medium">Saksikan momen terbaik dan tonton video penampilan Lingkung Seni Sekar Wangi langsung di website</p>
             </div>
 
-            <!-- Kontena Utama untuk Grid & Leret Sentuhan Lancar -->
-            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+            <!-- Kontainer Utama Grid -->
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch max-w-6xl mx-auto">
                 
-                <!-- Kolom Kiri: Galeri Foto Pentas (Dengan Swipe & Drag Support) -->
-                <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl shadow-2xl flex flex-col justify-between" 
+                <!-- Kolom Kiri: Galeri Foto Pentas -->
+                <div class="lg:col-span-7 glass-gold-card p-6 sm:p-10 rounded-3xl shadow-2xl flex flex-col justify-between relative" 
                      id="photo-slider-container"
                      ontouchstart="handleTouchStart(event)" 
                      ontouchmove="handleTouchMove(event)">
                     <div>
                         <div class="flex items-center justify-between mb-6">
-                            <h3 class="font-serif text-lg font-bold text-white flex items-center gap-2">
+                            <h3 class="font-serif text-base sm:text-lg font-bold text-white flex items-center gap-2">
                                 <span class="w-2.5 h-2.5 rounded-full bg-gold"></span> Galeri Foto Pentas
                             </h3>
-                            <span id="slide-indicator" class="text-xs font-semibold text-stone-400 uppercase tracking-widest bg-black/60 px-3 py-1 rounded-full border border-white/5">1 / 10</span>
+                            <span id="slide-indicator" class="text-xs font-semibold text-gold uppercase tracking-widest bg-black/60 px-3.5 py-1.5 rounded-full border border-gold/35">1 / 17</span>
                         </div>
 
-                        <!-- Area Slider Tumpang Tindih -->
-                        <div class="relative h-[280px] sm:h-[350px] flex items-center justify-center my-4 select-none">
+                        <!-- Area Slider Vertikal (Tanpa Bingkai Foto, Hanya Bingkai Luar) -->
+                        <div class="relative h-[320px] sm:h-[400px] flex items-center justify-center my-4 select-none px-8">
+                            
+                            <!-- Tombol Geser Kiri di Samping Foto -->
+                            <button onclick="prevSlide()" class="absolute left-0 z-40 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/80 border border-gold text-gold flex items-center justify-center hover:bg-gold hover:text-black transition shadow-lg active:scale-95" aria-label="Sebelumnya">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
+                            </button>
+
                             <!-- Foto Kiri -->
-                            <div id="left-card" class="absolute left-0 sm:left-4 w-[50%] aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 z-10 opacity-40 scale-90 -rotate-3 blur-[1px] cursor-pointer" onclick="prevSlide()">
-                                <img id="left-img" src="" alt="Previous" class="w-full h-full object-cover pointer-events-none">
+                            <div id="left-card" class="absolute left-10 sm:left-14 w-[35%] aspect-[9/16] rounded-xl overflow-hidden transition-all duration-500 z-10 opacity-25 scale-95 -rotate-2 blur-[1px] cursor-pointer flex items-center justify-center bg-white/5" onclick="prevSlide()">
+                                <img id="left-img" src="" alt="Previous" class="w-full h-full object-contain pointer-events-none">
                             </div>
 
-                            <!-- Foto Tengah (Menonjol & Interaktif) -->
-                            <div class="absolute z-30 w-[75%] sm:w-[60%] aspect-[4/3] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-gold/40 transition-all duration-500 scale-100 rotate-0">
-                                <img id="main-img" src="" alt="Main" class="w-full h-full object-cover pointer-events-none">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
-                                    <span id="main-tag" class="text-[9px] uppercase tracking-wider font-semibold text-gold">Dokumentasi</span>
-                                    <h4 id="main-title" class="font-serif font-bold text-xs sm:text-sm text-white mt-0.5"></h4>
+                            <!-- Foto Tengah (Utama, Bersih Tanpa Bingkai) -->
+                            <div class="absolute z-30 w-[60%] sm:w-[48%] aspect-[9/16] rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.8)] transition-all duration-500 scale-100 rotate-0 flex items-center justify-center bg-white/5">
+                                <img id="main-img" src="" alt="Main" class="w-full h-full object-contain pointer-events-none">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex flex-col justify-end p-4">
+                                    <span id="main-tag" class="text-[10px] uppercase tracking-wider font-bold text-gold">Dokumentasi</span>
+                                    <h4 id="main-title" class="font-serif font-bold text-xs sm:text-sm text-white mt-1 leading-snug drop-shadow"></h4>
                                 </div>
                             </div>
 
                             <!-- Foto Kanan -->
-                            <div id="right-card" class="absolute right-0 sm:right-4 w-[50%] aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 z-10 opacity-40 scale-90 rotate-3 blur-[1px] cursor-pointer" onclick="nextSlide()">
-                                <img id="right-img" src="" alt="Next" class="w-full h-full object-cover pointer-events-none">
+                            <div id="right-card" class="absolute right-10 sm:right-14 w-[35%] aspect-[9/16] rounded-xl overflow-hidden transition-all duration-500 z-10 opacity-25 scale-95 rotate-2 blur-[1px] cursor-pointer flex items-center justify-center bg-white/5" onclick="nextSlide()">
+                                <img id="right-img" src="" alt="Next" class="w-full h-full object-contain pointer-events-none">
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Tombol Navigasi -->
-                    <div class="flex items-center justify-end gap-3 mt-6 pt-4 border-t border-white/5">
-                        <button onclick="prevSlide()" class="w-10 h-10 rounded-full bg-black/60 border border-white/10 text-white flex items-center justify-center hover:border-gold transition shadow-md active:scale-95" aria-label="Sebelumnya">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                        </button>
-                        <button onclick="nextSlide()" class="w-10 h-10 rounded-full bg-black/60 border border-white/10 text-white flex items-center justify-center hover:border-gold transition shadow-md active:scale-95" aria-label="Berikutnya">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </button>
+                            <!-- Tombol Geser Kanan di Samping Foto -->
+                            <button onclick="nextSlide()" class="absolute right-0 z-40 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/80 border border-gold text-gold flex items-center justify-center hover:bg-gold hover:text-black transition shadow-lg active:scale-95" aria-label="Berikutnya">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Kolom Kanan: Video Pertunjukan YouTube Terintegrasi -->
-                <div class="lg:col-span-5 glass-card p-6 sm:p-8 rounded-3xl shadow-2xl flex flex-col justify-between space-y-4">
+                <!-- Kolom Kanan: Video Pertunjukan YouTube -->
+                <div class="lg:col-span-5 glass-gold-card p-6 sm:p-10 rounded-3xl shadow-2xl flex flex-col justify-between space-y-6">
                     <div>
                         <div class="flex items-center justify-between mb-4">
-                            <h3 class="font-serif text-lg font-bold text-white flex items-center gap-2">
+                            <h3 class="font-serif text-base sm:text-lg font-bold text-white flex items-center gap-2">
                                 <span class="w-2.5 h-2.5 rounded-full bg-red-600"></span> Video Pertunjukan
                             </h3>
-                            <span class="text-[10px] bg-red-600/20 text-red-400 px-3 py-1 rounded-full font-semibold border border-red-600/30">Tonton Langsung</span>
+                            <span class="text-[10px] bg-red-600/20 text-red-400 px-3.5 py-1.5 rounded-full font-semibold border border-red-600/30">Tonton Langsung</span>
                         </div>
-
-                        <p class="text-stone-400 text-xs leading-relaxed mb-4">
-                            Saksikan penampilan eksklusif Lingkung Seni Singa Depok Sekar Wangi langsung di sini tanpa perlu membuka YouTube.
-                        </p>
                     </div>
 
-                    <!-- Embed Video Player -->
-                    <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black border border-white/10 shadow-inner my-auto">
+                    <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black border border-gold/40 shadow-2xl my-auto">
                         <iframe 
                             class="w-full h-full" 
                             src="https://www.youtube.com/embed/n6OxDAyi4_Y" 
@@ -313,8 +304,8 @@
                         </iframe>
                     </div>
 
-                    <div class="pt-2 text-center border-t border-white/5">
-                        <span class="text-[11px] text-stone-400 font-medium">Putar video langsung di atas secara lancar</span>
+                    <div class="pt-3 text-center border-t border-gold/20">
+                        <span class="text-xs text-stone-400 font-medium">Dokumentasi Video Resmi</span>
                     </div>
                 </div>
 
@@ -333,7 +324,6 @@
                 </p>
 
                 <div class="space-y-4 pt-4 border-t border-white/10">
-                    <!-- Logo Resmi Lokasi (SVG) -->
                     <div class="flex items-start gap-3">
                         <div class="w-8 h-8 rounded-xl bg-gold/10 flex items-center justify-center text-gold flex-shrink-0">
                             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -343,7 +333,6 @@
                             <p class="text-xs text-stone-400 mt-0.5">Jl. Derwati RT 02/04, Kel. Derwati, Kec. Rancasari, Kota Bandung</p>
                         </div>
                     </div>
-                    <!-- Logo Resmi WhatsApp (SVG) -->
                     <div class="flex items-start gap-3">
                         <div class="w-8 h-8 rounded-xl bg-gold/10 flex items-center justify-center text-gold flex-shrink-0">
                             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
@@ -353,7 +342,6 @@
                             <p class="text-xs text-gold mt-0.5 font-semibold">083116743088 / 085135177499</p>
                         </div>
                     </div>
-                    <!-- Logo Resmi Instagram (SVG) -->
                     <div class="flex items-start gap-3">
                         <div class="w-8 h-8 rounded-xl bg-gold/10 flex items-center justify-center text-gold flex-shrink-0">
                             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -366,19 +354,19 @@
                 </div>
             </div>
 
-            <div class="md:col-span-7 glass-card p-6 sm:p-10 rounded-3xl shadow-2xl">
+            <div class="md:col-span-7 glass-gold-card p-6 sm:p-10 rounded-3xl shadow-2xl">
                 <h3 class="font-serif text-xl font-bold mb-6 text-white">Form Pemesanan WhatsApp</h3>
                 
                 <form id="booking-form" class="space-y-5" onsubmit="sendToWhatsApp(event)">
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Nama Pemesan *</label>
-                        <input type="text" id="nama" required class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-white/10 focus:outline-none focus:border-gold text-xs text-white transition" placeholder="Masukkan nama lengkap">
+                        <input type="text" id="nama" required class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-gold/30 focus:outline-none focus:border-gold text-xs text-white transition" placeholder="Masukkan nama lengkap">
                     </div>
 
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Jenis Acara *</label>
-                            <select id="jenis_acara" required class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-white/10 focus:outline-none focus:border-gold text-xs text-white transition">
+                            <select id="jenis_acara" required class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-gold/30 focus:outline-none focus:border-gold text-xs text-white transition">
                                 <option value="" disabled selected>Pilih jenis acara</option>
                                 <option value="Khitanan">Khitanan</option>
                                 <option value="Pernikahan">Pernikahan</option>
@@ -388,18 +376,18 @@
                         </div>
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Tanggal Acara *</label>
-                            <input type="date" id="tanggal" required class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-white/10 focus:outline-none focus:border-gold text-xs text-white transition">
+                            <input type="date" id="tanggal" required class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-gold/30 focus:outline-none focus:border-gold text-xs text-white transition">
                         </div>
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Lokasi Acara *</label>
-                        <input type="text" id="lokasi" required class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-white/10 focus:outline-none focus:border-gold text-xs text-white transition" placeholder="Contoh: Jl. Derwati No. 12, Rancasari, Bandung">
+                        <input type="text" id="lokasi" required class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-gold/30 focus:outline-none focus:border-gold text-xs text-white transition" placeholder="Contoh: Jl. Derwati No. 12, Rancasari, Bandung">
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Catatan Tambahan</label>
-                        <textarea id="catatan" rows="3" class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-white/10 focus:outline-none focus:border-gold text-xs text-white transition" placeholder="Tuliskan permintaan khusus jika ada..."></textarea>
+                        <textarea id="catatan" rows="3" class="w-full px-4.5 py-3.5 rounded-2xl bg-black/50 border border-gold/30 focus:outline-none focus:border-gold text-xs text-white transition" placeholder="Tuliskan permintaan khusus jika ada..."></textarea>
                     </div>
 
                     <button type="submit" class="w-full py-4 rounded-2xl bg-gold text-black font-semibold uppercase tracking-wider hover:bg-goldHover transition text-xs shadow-lg shadow-gold/10">
@@ -439,15 +427,22 @@
 
         const galleryData = [
             { img: "https://i.ibb.co.com/4n5BhB88/840051607-1724194648682910-7395825489207716141-n.jpg", title: "Aksi Singa Depok & Musik Tradisional", tag: "Pertunjukan" },
+            { img: "https://i.ibb.co.com/KxTyJzSB/840641887-1096609066516555-1711495382555152678-n.jpg", title: "Pentas Seni Tradisi Sunda", tag: "Dokumentasi" },
             { img: "https://i.ibb.co.com/7xBf1s3s/841864621-1078836248356425-1349834455766026457-n.jpg", title: "Kemeriahan Pawai Budaya", tag: "Arak-arakan" },
             { img: "https://i.ibb.co.com/235HFB1x/841927635-1158799720146023-344809887797110893-n.jpg", title: "Atraksi Kuda Lumping & Singa Depok", tag: "Kesenian Rakyat" },
             { img: "https://i.ibb.co.com/wFZYKqDY/843433346-2926643887715347-1504015139063038880-n.jpg", title: "Kekompakan Penabuh & Seniman", tag: "Pentas Seni" },
+            { img: "https://i.ibb.co.com/kgVNMW1q/843634888-3455260431320956-573916966033910028-n.jpg", title: "Momen Spesial Pertunjukan", tag: "Tradisi" },
             { img: "https://i.ibb.co.com/5xs4b3wY/844295637-1859846205002805-1157902841736665827-n.jpg", title: "Dokumentasi Lapangan Pertunjukan", tag: "Tradisi Sunda" },
+            { img: "https://i.ibb.co.com/hJJTGX5S/844757190-1147702827902939-4970321834059632438-n.jpg", title: "Aksi Spektakuler Singa Depok", tag: "Pertunjukan" },
+            { img: "https://i.ibb.co.com/JRh6p1NY/844859275-2192727208291830-5284610993143145083-n.jpg", title: "Keseruan Iring-iringan Seni", tag: "Arak-arakan" },
             { img: "https://i.ibb.co.com/ksYjbBv4/845457762-1632789111818276-8285239934638899814-n.jpg", title: "Kebersamaan Keluarga Besar Sekar Wangi", tag: "Komunitas" },
             { img: "https://i.ibb.co.com/CsPH0ZFr/846248954-2189618655315887-7032706592295273701-n.jpg", title: "Atraksi Panggung Meriah", tag: "Pertunjukan" },
             { img: "https://i.ibb.co.com/PG07WWnb/846319697-1221089923715190-7538450260832159413-n.jpg", title: "Seni Rakyat Singa Depok", tag: "Festival" },
             { img: "https://i.ibb.co.com/HLfKRHJd/847744591-1643482517512965-4570562384489649862-n.jpg", title: "Pawai Hajatan Masyarakat", tag: "Arak-arakan" },
-            { img: "https://i.ibb.co.com/cRSnywN/848438319-4613975848840259-2582893952900116042-n.jpg", title: "Pelestarian Budaya Sunda", tag: "Tradisi" }
+            { img: "https://i.ibb.co.com/GQgKJ69M/848217671-1112120868072142-7869938613766992100-n.jpg", title: "Penampilan Seniman Sekar Wangi", tag: "Kesenian" },
+            { img: "https://i.ibb.co.com/cRSnywN/848438319-4613975848840259-2582893952900116042-n.jpg", title: "Pelestarian Budaya Sunda", tag: "Tradisi" },
+            { img: "https://i.ibb.co.com/9H7QSWjb/848813901-1128667132954803-3120786915638321106-n.jpg", title: "Atraksi Kesenian Tradisional", tag: "Budaya" },
+            { img: "https://i.ibb.co.com/B2zrDcLT/850006761-3402876346550290-8151397860644415810-n.jpg", title: "Kemeriahan Pementasan Budaya", tag: "Pentas" }
         ];
 
         let currentIndex = 0;
@@ -476,7 +471,6 @@
             updateGallery();
         }
 
-        // Swipe Touch Handler untuk HP
         let touchStartX = 0;
         let touchEndX = 0;
 
